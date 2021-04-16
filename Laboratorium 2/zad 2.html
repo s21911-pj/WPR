@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <form action="zad 2.php" method="post">
+
+
+
+
+
+        <label for="Lista osób">Lista osób</label>
+        <select id="Lista osób">
+        <option value="Jedna osoba">1</option>
+        <option value="Dwie osoby">2</option>
+        <option value="Trzy osoby">3</option>
+        <option value="Cztery osoby">4</option>
+        
+        <input type="text" name="imie" placeholder="podaj imie">
+        <input type="text" name="nazwisko" placeholder="podaj nazwisko">
+        <input type="number" id="numer_karty" name="numer_karty" placeholder="podaj nr karty"
+        max="9999999999999999">
+        <input type="email" name="email" required placeholder="podaj email">
+        <input type="date" name="data_przybycia">
+        <input type="date" name="data_wyjazdu"><br>
+        <input type="checkbox" name="pokoj_palacych" value="pokoj_palacych">
+        <label for="pokoj_palacych"> Poproszę o pokój dla palących</label><br>
+        <input type="checkbox" name="łóżko_dla_dziecka" value="łóżko_dla_dziecka">
+        <label for="łóżko_dla_dziecka"> Potrzebne łóżko dla dziecka</label><br>
+        <input type="checkbox" name="balkon" value="balkon" checked>
+        <label for="balkon"> Poproszę o pokój z balkonem</label><br><br>
+        <input type="submit" value="prześlij">
+        
+
+        </select>
+
+    </form>
