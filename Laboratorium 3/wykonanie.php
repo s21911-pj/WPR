@@ -7,7 +7,7 @@ function podziel($a,$b){
     if ($b != 0){
         return $a/$b;
     } else {
-        echo "nie dzielimy przez 0";
+        echo "nie dzielimy przez 0"
     }
 } 
 function dodaj($a,$b) {
