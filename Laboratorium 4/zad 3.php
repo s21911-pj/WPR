@@ -7,7 +7,7 @@ else{
     $last_time_visited = date("F j, Y, g:i a", time());
 }
 
-echo "Ostatni raz na stronie: $last_time_visited";
+
 
 if(!isset($_SESSION['page1hits'])){
     $_SESSION['page1hits'] = 1;
@@ -15,12 +15,12 @@ if(!isset($_SESSION['page1hits'])){
 else{
     $_SESSION['page1hits']++;
 }
-setcookie("last_time_visited",date("F j, Y, g:i a"), time());
+setcookie("last_time_visited",date("F j, Y, g:i a"), time()+60*60*24*14);
 echo "Liczba wizyt na stronie: ";
 echo $_SESSION['page1hits'];
-echo "Ostatni raz na stronie: ";
-echo $last_time_visited;
 
+echo "      Ostatni raz na stronie: ";
+echo $last_time_visited;
 
 ?>
 <!doctype html>
